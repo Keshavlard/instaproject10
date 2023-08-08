@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bad Script', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    color:#010032a5;
+    font-size: 5em;
+}
+
+h2 span{
+    display: table-cell;
+    margin: 0;
+    padding: 5px;
+    animation: example 2s linear infinite;
+}
+
+h2 span:nth-child(1){
+    animation-delay: 0s;
+}
+h2 span:nth-child(2){
+    animation-delay: 0.3s;
+}
+h2 span:nth-child(3){
+    animation-delay: 0.6s;
+}
+h2 span:nth-child(4){
+    animation-delay: 0.9s;
+}
+h2 span:nth-child(5){
+    animation-delay: 1.2s;
+}
+h2 span:nth-child(6){
+    animation-delay: 1.5s;
+}
+h2 span:nth-child(7){
+    animation-delay: 1.8s;
+}
+
+@keyframes example {
+    0%,100%{
+        color: #fff;
+        filter: blur(1.8px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 150px #00b3ff;
+    }
+    30%, 100%{
+        color: #010032a5;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
