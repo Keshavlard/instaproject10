@@ -1,3 +1,3 @@
-# instaproject10
+# smallproject10
 
 stylish text animation
